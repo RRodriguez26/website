@@ -1,0 +1,29 @@
+{
+    "title": "Scholar and Programmer",
+    "summary": "I am passionate about advancing technology in many ways with the main focus of Computer Science. Such focus includes advancing graphics for video game development, robotics, astrophysics, quantum computing, and creative coding. As a college student, I want to learn more on every single of these focus. Though admittedly it is a lot to learn, challenges does not stop me from trying.",
+    "education" : [
+        {
+            "institute": "Community College of Philadelphia",
+            "logo": "../src/images/ccp_logo.png",
+            "url": "https://www.myccp.online/",
+            "title": "Associates on Computer Science",
+            "durationInYears": "3",
+            "graduationYear": 2022
+        },
+        {
+            "institute": "Temple University",
+            "logo": "../src/images/temple_logo.jpg",
+            "url": "https://www.temple.edu/",
+            "title": "Bachelors on Computer Science",
+            "durationInYears": "Present",
+            "graduationYear": 2024
+        }
+    ],
+    "certification": [
+        {
+            "logo": "../src/images/launchcode_logo.jpg",
+            "url": "https://www.launchcode.org/",
+            
+        }
+    ]
+}
