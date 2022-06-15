@@ -6,6 +6,7 @@ import Illustration from './Pages/Illustration';
 import Photography from './Pages/Photography';
 import Projects from './Pages/Projects';
 import ReadingLists from './Pages/ReadingList';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -19,7 +20,9 @@ function App() {
         <Route path='/projects' element={<Projects/>}/>
         <Route path='/readinglists' element={<ReadingLists/>}/>
       </Routes>
+      <Footer/>
     </Router>
+    
   );
 }
 
