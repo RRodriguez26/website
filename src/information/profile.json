@@ -23,7 +23,40 @@
         {
             "logo": "../src/images/launchcode_logo.jpg",
             "url": "https://www.launchcode.org/",
+            "certification":"LC101 JavaScript & C# Web Development Course",
+            "issuer": "LaunchCode",
+            "issueDate":"01-12-2022",
+            "expirationDate": "No expiration date",
+            "verificationLink":"https://drive.google.com/file/d/1JdDC4rVsiHjE23Sa2GfUQGOE1Qi-mCGF/view?usp=sharing"
             
+        }
+    ],
+    "experiences": [
+        {
+            "university": "Thomas Jefferon University",
+            "logo":"../src/images/thomas-jefferson-university.jpg",
+            "url": "https://www.jeffersonhealthhack.com/",
+            "roles": [
+                {
+                    "title": "Assistant art direcotr",
+                    "description": "Assisted teammates on the idea of a model for a vertical farm integration.",
+                    "location": "Philadelphia, PA"
+                }
+            ]
+
+        },
+        {
+            "university": "Drexel University",
+            "logo":"../src/images/drexel-university.jpg",
+            "url": "https://www.jeffersonhealthhack.com/",
+            "roles": [
+                {
+                    "title": "Assistant art direcotr",
+                    "description": "Assisted teammates on the idea of a model for a vertical farm integration.",
+                    "location": "Philadelphia, PA"
+                }
+            ]
+
         }
     ]
 }
