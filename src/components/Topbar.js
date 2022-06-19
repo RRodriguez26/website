@@ -37,7 +37,7 @@ class Topbar extends React.Component {
                             <NavLink href="/projects/">Projects</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/ReadingList/">Reading List</NavLink>
+                            <NavLink href="/readinglist/">Reading List</NavLink>
                         </NavItem>
                     </Nav>
                 </Collapse>
