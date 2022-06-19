@@ -3,6 +3,7 @@ import {Container, TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap
 import classnames from 'classnames';
 
 import reading from '../information/reading-list.json';
+import PhilosophyBooks from "../components/PhilosophyBooks";
 
 class ReadingList extends React.Component {
 
@@ -44,9 +45,22 @@ class ReadingList extends React.Component {
                     Mathematics
                     </NavLink>
                 </NavItem>
+                <NavItem>
+                    <NavLink className={classnames({ active: this.state.activeTab === '3' })}
+                            onClick={() => { this.toggle('3'); }}>
+                    Fiction
+                    </NavLink>
+                </NavItem>
+                <NavItem>
+                    <NavLink className={classnames({ active: this.state.activeTab === '4' })}
+                            onClick={() => { this.toggle('4'); }}>
+                    True Crime
+                    </NavLink>
+                </NavItem>
                 </Nav>
                 <TabContent activeTab={this.state.activeTab}>
-                <TabPane tabId="2">
+                <TabPane tabId="1">
+                <PhilosophyBooks/>
                 </TabPane>
                 </TabContent>
             </Container>
