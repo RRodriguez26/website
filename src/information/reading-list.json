@@ -1,82 +1,81 @@
 {
     "title":"My Reading List",
     "summary": "I have interest in many different subjects, but I would like to share my reading list to you if you're interested.",
-    "genre": [ 
-                {    
-                    "Philosophy":   [
+    "genre": [
+                {
+                    "Philosophy": [
                                         {
-                                            "title":"Major Ideologies",
+                                            "Title":"Major Ideologies",
                                             "Author":"Alexander J. Groth",
                                             "Year":"1971",
                                             "Publisher":"Jonh Wiley & Sons, Inc."
                                         },
                                         {
-                                            "title":"Hegel's Phenomenology of Spirit",
+                                            "Title":"Hegel's Phenomenology of Spirit",
                                             "Author":"G. W. F. Hegel (Translation by A.V. Miller)",
                                             "Year":"1952",
                                             "Publisher":"Oxford University Press"
                                         },
                                         {
-                                            "title":"Ten Great Works of Philosophy",
+                                            "Title":"Ten Great Works of Philosophy",
                                             "Author":"Robert Paul Wolff",
                                             "Year":"1969",
                                             "Publisher":"Signet Classic"
                                         },
                                         {
-                                            "title":"Political Questions: Political Phiosophy from Plato to Rawls (Second Edition)",
+                                            "Title":"Political Questions: Political Phiosophy from Plato to Rawls (Second Edition)",
                                             "Author":"Larry Arnhart",
                                             "Year":"1993",
                                             "Publisher":"Waveland Press, Inc."
                                         },
                                         {
-                                            "title":"Ten Great Works of Philosophy",
+                                            "Title":"Ten Great Works of Philosophy",
                                             "Author":"Robert Paul Wolff",
                                             "Year":"1969",
                                             "Publisher":"Signet Classic"
                                         }
-        
                                     ]
                 },
                 {
-                    "fiction" : [
+                    "Fiction" : [
                                     {
-                                        "title":"Great Expectations",
+                                        "Title":"Great Expectations",
                                         "Author":"Charles Dickens",
                                         "Year":"2009",
                                         "Publisher":"Signet Classic"
                                     },
                                     {
-                                        "title":"Dune",
+                                        "Title":"Dune",
                                         "Author":"Frank Herbert",
                                         "Year":"1965",
                                         "Publisher":"Berkeley (Penguin Random House LLC)"
                                     },
                                     {
-                                        "title":"Sharp Objects",
+                                        "Title":"Sharp Objects",
                                         "Author":"Gillian Flynn",
                                         "Year":"2006",
                                         "Publisher":"Broadway Books"
                                     },
                                     {
-                                        "title":"Lord of the Flies",
+                                        "Title":"Lord of the Flies",
                                         "Author":"William Golding",
                                         "Year":"1954",
                                         "Publisher":"Penguin Classic"
                                     },
                                     {
-                                        "title":"The Corpse Exhibition and Other Stories of Iraq",
+                                        "Title":"The Corpse Exhibition and Other Stories of Iraq",
                                         "Author":"Hassan Blasim(Translated by Jonathan Wright)",
                                         "Year":"2014",
                                         "Publisher":"Penguin Books"
                                     },
                                     {
-                                        "title":"Bodega Dreams",
+                                        "Title":"Bodega Dreams",
                                         "Author":"Ernesto Quiñonez",
                                         "Year":"2000",
                                         "Publisher":"Signet Classic"
                                     },
                                     {
-                                        "title":"The Girl on the Train",
+                                        "Title":"The Girl on the Train",
                                         "Author":"paula Hawkins",
                                         "Year":"2014",
                                         "Publisher":"Riverhead Books"
@@ -86,30 +85,29 @@
                     {
                         "true crime": [
                             {
-                                "title":"Columbine",
+                                "Title":"Columbine",
                                 "Author":"Dave Cullen",
                                 "Year":"2009",
                                 "Publisher":"Twelve"
                             },
                             {
-                                "title":"Helter Skelter: The True Story of the Manson Murders",
+                                "Title":"Helter Skelter: The True Story of the Manson Murders",
                                 "Author":"Vincent Bugliosi",
                                 "Year":"1974",
                                 "Publisher":"Norton & Company, Inc."
                             },
                             {
-                                "title":"Zodiac",
+                                "Title":"Zodiac",
                                 "Author":"Robert Graysmith",
                                 "Year":"1986",
                                 "Publisher":"The Berkley Publishing Group"
                             },
                             {
-                                "title":"Killer Clown: The John Wayne Gacy Murders",
+                                "Title":"Killer Clown: The John Wayne Gacy Murders",
                                 "Author":"Terry Sullivan",
                                 "Year":"2013",
                                 "Publisher":"Pinnacle Books"
                             }
-                            
                         ]
                     }
             ]
