@@ -1,62 +1,52 @@
 import React from 'react';
-import {Container, Row, Col, Media} from 'reactstrap';
+import { Container, Row, Col, Media } from 'reactstrap';
 import reading from '../information/reading-list.json';
 
-// TODO: Fix the body to display a list of books based on categories, in this case it's Philosophy [ ]
+// TODO: Fix the body to display a list of books based on categories, in this case it's Philosophy [X]
 
-class PhilosophyBooks extends React.Component {    
+class PhilosophyBooks extends React.Component {
     render() {
         return <Container>
-            <Row>
-                <Col>
-                    {reading.genre.map(function (books, i) {
-                        return (
-                            <div key={i}>
-                                <Media>
-                                    <Media body>
-                                        {/* {books.Philosophy.map(function (book, j){
-                                                return (
-                                                <div key={j}>
-                                                    {
-                                                    [
-                                                        {
-                                                            "key": "Title",
-                                                            "value": book.Title,
-                                                        },
-                                                        {
-                                                            "key": "Author",
-                                                            "value": book.Author,
-                                                          },
-                                                          {
-                                                            "key": "Year",
-                                                            "value": book.Year,
-                                                          },
-                                                          {
-                                                            "key": "Publisher",
-                                                            "value": book.Publisher,
-                                                          }
-                                                    ].map(function (object) {
-                                                        return <div>
-                                                                <Row>
-                                                                    <Col className="formLabel">{object.key}:</Col>
-                                                                </Row>
-                                                                <Row>
-                                                                    <Col>{object.value}</Col>
-                                                                </Row>
-                                                                </div>
-                                                    })
-                                                }
-                                                </div>
-                        );
-                    })   
-                                        } */}
-                                    </Media>
-                                </Media>
-                            </div>
-                            )})}
-                </Col>
-            </Row>
-        </Container>
+          {reading["genre"][0]["Philosophy"].map(function (book, i) {
+            return (
+              <div key={i}>
+                <Media>
+                  <Media body>
+                    
+                    <Media heading>
+                    <h1>{book.Title}</h1>
+                    </Media>   
+                    
+                    {
+                                [
+                                    {
+                                        "key": "Author",
+                                        "value": book.Author
+                                      },
+                                      {
+                                        "key": "Publisher",
+                                        "value": book.Publisher
+                                      },
+                                      {
+                                        "key": "Year",
+                                        "value": book.Year
+                                      }
+                                ].map(function (object) {
+                                    return <div>
+                                            <Row>
+                                                <Col className="formLabel">{object.key}: {object.value}</Col>
+                                            </Row>
+                                            
+                                            </div>
+                                })
+                            }
+
+                  </Media>
+                </Media>
+              </div>
+            );
+          })}
+    </Container>
     }
 }
 
