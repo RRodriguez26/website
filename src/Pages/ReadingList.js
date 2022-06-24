@@ -4,6 +4,8 @@ import classnames from 'classnames';
 
 import reading from '../information/reading-list.json';
 import PhilosophyBooks from "../components/PhilosophyBooks";
+import FictionBooks from "../components/FictionBooks";
+import TrueCrimeBooks from "../components/TrueCrimeBooks";
 
 class ReadingList extends React.Component {
 
@@ -61,6 +63,12 @@ class ReadingList extends React.Component {
                 <TabContent activeTab={this.state.activeTab}>
                 <TabPane tabId="1">
                 <PhilosophyBooks/>
+                </TabPane>
+                <TabPane tabId="3">
+                <FictionBooks/>
+                </TabPane>
+                <TabPane tabId="4">
+                <TrueCrimeBooks/>
                 </TabPane>
                 </TabContent>
             </Container>
