@@ -109,6 +109,40 @@
                                 "Publisher":"Pinnacle Books"
                             }
                         ]
+                    },
+                    {
+                        "Mathematics": [
+                            {
+                                "Title":"How to Prove It",
+                                "Author":"Daniel J. Velleman",
+                                "Year":"2019",
+                                "Publisher":"Cambridge University Press"
+                            },
+                            {
+                                "Title":"Discrete Mathematics & Its Application (Special Indian Edition, 6th Edition)",
+                                "Author":"Kenneth H. Rosen",
+                                "Year":"2007",
+                                "Publisher":"Tata McGraw-Hill Publishing Company Limited"
+                            },
+                            {
+                                "Title":"Graph and Applications: An Introductory Approach",
+                                "Author":"Joan M. Aldous and Robin J. Wilson",
+                                "Year":"1995",
+                                "Publisher":"The Open University"
+                            },
+                            {
+                                "Title":"The Art of Statistics: How to Learn From Data",
+                                "Author":"David Spiegelhalter",
+                                "Year":"2019",
+                                "Publisher":"Basic Books"
+                            },
+                            {
+                                "Title":"Makers of Mathematics",
+                                "Author":"Stuart Hollingdale",
+                                "Year":"1989",
+                                "Publisher":"Penguin Books"
+                            }
+                    ]
                     }
             ]
 }
