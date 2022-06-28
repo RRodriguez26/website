@@ -4,7 +4,7 @@
     "education" : [
         {
             "institute": "Community College of Philadelphia",
-            "logo": "../src/images/ccp_logo.png",
+            "logo": "./images/ccp_logo.png",
             "url": "https://www.myccp.online/",
             "title": "Associates on Computer Science",
             "durationInYears": "3",
@@ -12,7 +12,7 @@
         },
         {
             "institute": "Temple University",
-            "logo": "../src/images/temple_logo.jpg",
+            "logo": "../images/temple_logo.jpg",
             "url": "https://www.temple.edu/",
             "title": "Bachelors on Computer Science",
             "durationInYears": "Present",
@@ -21,7 +21,7 @@
     ],
     "certification": [
         {
-            "logo": "../src/images/launchcode_logo.jpg",
+            "logo": "./src/images/launchcode_logo.jpg",
             "url": "https://www.launchcode.org/",
             "certification":"LC101 JavaScript & C# Web Development Course",
             "issuer": "LaunchCode",
