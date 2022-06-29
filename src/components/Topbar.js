@@ -39,6 +39,9 @@ class Topbar extends React.Component {
                         <NavItem>
                             <NavLink className="nav-text-color" href="/readinglist/">Reading List</NavLink>
                         </NavItem>
+                        <NavItem>
+                            <NavLink className="nav-text-color" href="/blogs/">Blogs</NavLink>
+                        </NavItem>
                     </Nav>
                 </Collapse>
             </Container>

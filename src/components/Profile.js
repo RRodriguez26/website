@@ -50,6 +50,11 @@ class Profile extends React.Component {
           </TabPane>
         </TabContent>
       </Container>
+      <Container>
+        <h1>
+          Instagram Post
+        </h1>
+      </Container>
     </div>;
   }
 }
