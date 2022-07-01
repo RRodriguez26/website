@@ -62,5 +62,10 @@ h3 {
 }
 
 .nav-text-color {
-  color: #FAFAFF
+  color: #FAFAFF;
+}
+
+.blog-text-input {
+  margin:auto;
+  padding: 10px;
 }
