@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Container, Button, Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
+import rafPhoto from '../images/me.jpg'
+import "../styles/blogs.css"
 const Blogs = () => {
 
     // Modal open state
@@ -28,6 +30,10 @@ const Blogs = () => {
                modalTransition={{ timeout: 200 }}>
           <ModalBody>
             Here will be a photo and a login only for the website creator (me) to update the blogs.
+            <img
+            className="self_photo"
+            src={rafPhoto}
+            alt="no image"/>
           </ModalBody>
         </Modal>
         </Container>
