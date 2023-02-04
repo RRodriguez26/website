@@ -53,6 +53,7 @@ class Profile extends React.Component {
       <Container>
         <h1>
           Instagram Post
+          {/* Implement 6 latest instagram post (Implemt one post first for sake of understanding) */}
         </h1>
       </Container>
     </div>;
