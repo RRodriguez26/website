@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Media } from 'reactstrap';
-import moment from 'moment';
 import profile from '../information/profile.json';
 
 class Education extends React.Component {
@@ -13,7 +12,7 @@ class Education extends React.Component {
                             {/* <Media left top href={edu.url}>
                                 <Media object src={edu.logo} alt={edu.institute} />
                             </Media> */}
-                            <img src={edu.logo}/>
+                            <img src={edu.logo} alt=""/> {/*Add alt to this image*/}
                             <Media body>
                                 <Media heading>
                                     <a href={edu.url}>{edu.institute}</a>
