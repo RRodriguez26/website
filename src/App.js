@@ -10,8 +10,6 @@ import Blogs from './Pages/Blogs'
 import Topbar from './components/Topbar';
 import Footer from './components/Footer';
 
-
-
 function App() {
   return (
     <Router>
