@@ -2,8 +2,8 @@ import React from "react";
 import {Container, Button, Modal, ModalBody} from "reactstrap";
 import rafPhoto from '../images/me.jpg'
 import "../styles/blogs.css"
-import { getInfo } from "../services/authorization";
-import { clientID } from "../services/credentials";
+import {getInfo} from "../services/authorization";
+import {clientID} from "../services/credentials";
 
 const Blogs = () => {
 
@@ -43,7 +43,7 @@ const Blogs = () => {
           </ModalBody>
         </Modal>
                 <h1>My Playlist</h1>
-                <p>{profile.display_name}</p>
+                <p>{profile.email}</p>
         </Container>
 
     </div>
