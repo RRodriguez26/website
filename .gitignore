@@ -12,6 +12,9 @@
 /build
 src/images/PhotoGallery
 
+#security
+/src/services/credentials.js
+
 # misc
 .DS_Store
 .env.local

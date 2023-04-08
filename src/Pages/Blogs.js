@@ -2,7 +2,16 @@ import React from "react";
 import {Container, Button, Modal, ModalBody} from "reactstrap";
 import rafPhoto from '../images/me.jpg'
 import "../styles/blogs.css"
+import { getInfo } from "../services/authorization";
+import { clientID } from "../services/credentials";
+
 const Blogs = () => {
+
+    const clientId = clientID; // your client ID
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get("code");
+
+    const profile = getInfo(code, clientId); // Find out why there is a invalid client error
 
     // Modal open state
     const [modal, setModal] = React.useState(false);
@@ -22,7 +31,7 @@ const Blogs = () => {
             <p>
                 As I am typing this, it is July 1st 1:59 AM, Volume 2 of Stranger Things will come out, my first driving lesson will take place soon. And I will be working soon. I am learning to do programing (Web Development specifically) as you all are reading this one day. 
             </p>
-            <Button color="primary"
+        <Button color="primary"
                 onClick={toggle}>Add Blog
         </Button>
         <Modal isOpen={modal}
@@ -33,6 +42,8 @@ const Blogs = () => {
             <img className="self_photo" src={rafPhoto} alt=""/> {/* Add alt to this image*/}
           </ModalBody>
         </Modal>
+                <h1>My Playlist</h1>
+                <p>{profile.display_name}</p>
         </Container>
 
     </div>
