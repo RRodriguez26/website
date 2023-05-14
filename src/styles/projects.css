@@ -1,4 +1,7 @@
-.projects-cards {
-    margin: 50px;
+.project-cards {
     display: flex;
+}
+
+#card {
+    margin: 50px;
 }
