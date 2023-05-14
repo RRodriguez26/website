@@ -3,13 +3,15 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
+import projectList from '../information/projects-list.json'
 import { CardActionArea } from '@mui/material';
+import '../styles/projects.css';
 const Projects = () => {
-    return ( 
-
+    return (
         // Add properties to position the card to the center
-        <div>
-        <Card sx={{ maxWidth: 345}}>
+        <div className='projects-cards'>
+            {projectList["project-lists"].map((project, i) => {
+        return <Card sx={{ maxWidth: 350}} key={i}>
             <CardActionArea>
                 <CardMedia>
                     {
@@ -22,14 +24,15 @@ const Projects = () => {
                 </CardMedia>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        TouchDesigner Project
+                        {project['project-title']}
                     </Typography>
                     <Typography gutterBottom variant="body2" component="text.secondary">
-                        Currently watching TouchDesigner tutorials to make more generative art with code (Mostly with music)
+                        {project['project-desc']}
                     </Typography>
                 </CardContent>
             </CardActionArea>
         </Card>
+            })}
     </div>
     );
 }
