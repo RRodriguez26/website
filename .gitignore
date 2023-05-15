@@ -11,6 +11,7 @@
 # production
 /build
 src/images/PhotoGallery
+src/information
 
 # misc
 .DS_Store

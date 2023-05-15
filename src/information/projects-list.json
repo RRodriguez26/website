@@ -7,6 +7,14 @@
         {
             "project-title":"This Website",
             "project-desc":"Currently developing a website, which is this one..." 
+        },
+        {
+            "project-title": "Voice Interface",
+            "project-desc": "Create an alexa-like device, creating a module where it gets my speech and get an AI response"
+        },
+        {
+            "project-title": "Philadelphia Reimagined",
+            "project-desc": "A game development project involving story, gamde development, and the like"
         }
     ]
 }
