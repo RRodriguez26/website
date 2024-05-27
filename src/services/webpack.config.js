@@ -1,8 +1,6 @@
-module.exports = {
-    entry: './src/index.js',
-    module: {
-        experiments: {
-            topLevelAwait: true,
-        }
+export const entry = './src/index.js';
+export const module = {
+    experiments: {
+        topLevelAwait: true,
     }
 };
