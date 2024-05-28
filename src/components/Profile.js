@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap";
 import classnames from 'classnames';
-import Education from './Education'
+import Education from './Education.js'
 import profile from '../information/profile.json'
 
 class Profile extends React.Component {

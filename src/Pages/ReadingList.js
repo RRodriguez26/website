@@ -3,10 +3,10 @@ import {Container, TabContent, TabPane, Nav, NavItem, NavLink } from "reactstrap
 import classnames from 'classnames';
 
 import reading from '../information/reading-list.json';
-import PhilosophyBooks from "../components/PhilosophyBooks";
-import FictionBooks from "../components/FictionBooks";
-import TrueCrimeBooks from "../components/TrueCrimeBooks";
-import MathBooks from "../components/MathBooks";
+import PhilosophyBooks from "../components/PhilosophyBooks.js";
+import FictionBooks from "../components/FictionBooks.js";
+import TrueCrimeBooks from "../components/TrueCrimeBooks.js";
+import MathBooks from "../components/MathBooks.js";
 
 class ReadingList extends React.Component {
 

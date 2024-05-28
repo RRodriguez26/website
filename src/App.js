@@ -1,14 +1,14 @@
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
-import Home from './Pages/Home';
-import Illustration from './Pages/Illustration';
-import Photography from './Pages/Photography';
-import Projects from './Pages/Projects';
-import ReadingLists from './Pages/ReadingList';
-import Blogs from './Pages/Blogs'
+import Home from './Pages/Home.js';
+import Illustration from './Pages/Illustration.js';
+import Photography from './Pages/Photography.js';
+import Projects from './Pages/Projects.js';
+import ReadingLists from './Pages/ReadingList.js';
+import Blogs from './Pages/Blogs.js'
 
-import Topbar from './components/Topbar';
-import Footer from './components/Footer';
+import Topbar from './components/Topbar.js';
+import Footer from './components/Footer.js';
 
 
 
