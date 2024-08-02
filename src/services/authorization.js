@@ -1,8 +1,10 @@
+
 export function getInfo(code, clientID) {
     if (!code) {
         redirectToAuthCodeFlow(clientID);
     } else {
         const accessToken = getAccessToken(clientID, code);
+        token = JSON.stringify(accessToken);
         return fetchProfile(accessToken);
     }
 }
@@ -42,8 +44,7 @@ async function getAccessToken(clientId, code) {
         body: params
     });
 
-    const { access_token } = await result.json();
-    return access_token;
+    return await result.json();
 }
 
 async function fetchProfile(token) {
@@ -74,3 +75,48 @@ function generateCodeVerifier(length) {
 
     return text;
 }
+// TODO (Make a webpack.config.js file to the project and make experiment.toplevelawait true)
+// LINK: https://stackoverflow.com/questions/72474803/error-the-top-level-await-experiment-is-not-enabled-set-experiments-toplevelaw
+// Authorization token that must have been created previously. See : https://developer.spotify.com/documentation/web-api/concepts/authorization
+
+async function fetchWebApi(endpoint, method, body) {
+    try {
+        const res = await fetch(`/api/${endpoint}`, {
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            method,
+            body: body ? JSON.stringify(body) : undefined
+        });
+
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+
+        return await res.json();
+    } catch (error) {
+        console.error('Error in fetchWebApi:', error);
+        throw error;
+    }
+}
+
+export async function getTopTracks() {
+    // Endpoint reference : https://developer.spotify.com/documentation/web-api/reference/get-users-top-artists-and-tracks
+    try {
+        let tracks = (await fetchWebApi('v1/me/top/tracks?time_range=short_term&limit=3&offset=0', 'GET'))
+        return tracks;
+    } catch (e) {
+        console.error("Error fetching top tracks:", e);
+        return null;
+    }
+}
+
+
+
+// const topTracks = await getTopTracks();
+// console.log(
+//     topTracks?.map(
+//         ({ name, artists }) =>
+//             `${name} by ${artists.map(artist => artist.name).join(', ')}`
+//     )
+// );
