@@ -1,6 +1,5 @@
 import {Container, Button, Modal, ModalBody} from "reactstrap";
-import { getInfo, getTopTracks } from "../services/authorization.js";
-import { SPOTIFY_CLIENT } from "../services/credentials.js";
+import { getInfo, getTopTracks, getRefreshToken } from "../services/authorization.js";
 import {useState, useEffect} from "react";
 import rafPhoto from '../images/me.jpg'
 import "../styles/blogs.css"
@@ -17,7 +16,7 @@ const Blogs = () => {
 
     useEffect(() => {
         async function fetchData() {
-            const profile = await getInfo(code, process.env.SPOTIFY_CLIENT);
+            const profile = await getInfo(code, process.env.REACT_APP_SPOTIFY_CLIENT_SECRET, process.env.REACT_APP_SPOTIFY_CLIENT_ID);
             setProfile(profile);
 
             const topTracks = await getTopTracks();
@@ -30,7 +29,7 @@ const Blogs = () => {
     // Toggle for Modal
     const toggle = () => setModal(!modal);
 
-
+if (tracks !== undefined && profile.length === 0){
     return (
         <div>
             <h3>Daily Blogs</h3>
@@ -57,6 +56,13 @@ const Blogs = () => {
             </Container>
         </div>
     );
+} else {
+    return (
+        <div>
+            Could not get any data from Spotify API
+        </div>
+    )
+}
 }
 
 export default Blogs;
