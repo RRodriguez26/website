@@ -1,10 +1,12 @@
 
-export function getInfo(code, clientID) {
+export function getInfo(code, secret, clientID) {
     if (!code) {
         redirectToAuthCodeFlow(clientID);
     } else {
-        const accessToken = getAccessToken(clientID, code);
-        token = JSON.stringify(accessToken);
+        const accessToken = getAccessToken(clientID, secret, code);
+        console.log(accessToken);
+        let token = JSON.stringify(accessToken);
+        console.log(token);
         return fetchProfile(accessToken);
     }
 }
@@ -27,22 +29,47 @@ async function redirectToAuthCodeFlow(clientId) {
     document.location = `https://accounts.spotify.com/authorize?${params.toString()}`;
 }
 
-async function getAccessToken(clientId, code) {
+async function getAccessToken(clientId, secret, code) {
     // TODO: Get access token for code
     const verifier = localStorage.getItem("verifier");
+    const url = "https://accounts.spotify.com/api/token";
     const params = new URLSearchParams();
 
     params.append("client_id", clientId);
-    params.append("grant_type", "authorization_code");
+    params.append("client_secret", secret);
+    params.append("grant_type", "client_credentials");
     params.append("code", code);
     params.append("redirect_uri", "http://localhost:3000/callback");
     params.append("code_verifier", verifier);
 
-    const result = await fetch("https://accounts.spotify.com/api/token", {
+    const payload = {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: params
-    });
+    }
+
+    const result = await fetch(url, payload);
+
+    return await result.get("access_token");
+}
+
+export async function getRefreshToken(clientId) {
+    // TODO: Get access token for code
+    const refreshToken = localStorage.getItem("refresh_token");
+    const params = new URLSearchParams();
+    const url = "https://accounts.spotify.com/api/token";
+
+    params.append("client_id", clientId);
+    params.append("grant_type", "refresh_token");
+    params.append("refresh_token", refreshToken);
+
+    const payload = {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: params
+    }
+
+    const result = await fetch(url, payload);
 
     return await result.json();
 }
